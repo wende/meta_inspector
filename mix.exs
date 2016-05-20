@@ -7,6 +7,7 @@ defmodule MetaInspector.Mixfile do
      elixir: "~> 1.2",
      description: "HTTP Metadata inspector",
      build_embedded: Mix.env == :prod,
+     meta: meta,
      start_permanent: Mix.env == :prod,
      deps: deps]
   end
@@ -30,5 +31,12 @@ defmodule MetaInspector.Mixfile do
   defp deps do
     [{:httpoison, "~> 0.8.0"},
      {:poison, "~> 2.0"}]
+  end
+  defp meta do
+    [
+      licences: ["MIT"],
+      contributors: ["Krzysztof Wende"]
+
+    ]
   end
 end
