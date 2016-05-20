@@ -34,7 +34,7 @@ defmodule MetaInspector.Mixfile do
   end
   defp meta do
     [
-      licences: ["MIT"],
+      licenses: ["MIT"],
       contributors: ["Krzysztof Wende"]
 
     ]
