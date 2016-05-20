@@ -6,15 +6,15 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add tcog to your list of dependencies in `mix.exs`:
+  1. Add meta_inspector to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:tcog, "~> 0.0.1"}]
+          [{:meta_inspector, "~> 0.0.1"}]
         end
 
-  2. Ensure tcog is started before your application:
+  2. Ensure meta_inspector is started before your application:
 
         def application do
-          [applications: [:tcog]]
+          [applications: [:meta_inspector]]
         end
 

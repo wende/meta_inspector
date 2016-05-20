@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :tcog, key: :value
+#     config :meta_inspector, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:tcog, :key)
+#     Application.get_env(:meta_inspector, :key)
 #
 # Or configure a 3rd-party app:
 #
