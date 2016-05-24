@@ -26,8 +26,9 @@ defmodule MetaInspector do
   defp fetch_name_content(string) do
     case Regex.run(~r/(name|property)=["'](.+?)["']/, string) do
       [_, _, name] ->
-        [_, content] = Regex.run(~r/content=["'](.+?)["']/, string)
-        [{name, content}]
+        case Regex.run(~r/content=["'](.+?)["']/, string) do
+          [_, content] -> [{name, content}]
+          nil -> []
       nil -> []
     end
   end

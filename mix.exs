@@ -3,11 +3,11 @@ defmodule MetaInspector.Mixfile do
 
   def project do
     [app: :meta_inspector,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.2",
      description: "HTTP Metadata inspector",
      build_embedded: Mix.env == :prod,
-     meta: meta,
+     package: meta,
      start_permanent: Mix.env == :prod,
      deps: deps]
   end
